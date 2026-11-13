@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boletos - Cineteca El Cbtis 131</title>
+  <link rel="stylesheet" href="cine1.css">
+</head>
+<body>
+  <header>
+    <div class="logos">
+      <img src="logo1.png" alt="Logo del cine">
+      <img src="oo.png" alt="Logo del CBTis">
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="index.html#cartelera">Cartelera</a>
+      <a href="index.html#horarios">Horarios</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </header>
+  <section id="boletos">
+    <h2>Comprar boletos</h2>
+    <video src="holaa1.mp4"type=video/mp4 width="800" controls ></video><br><br>
+    <label>Película:
+      <select id="pelicula">
+        <option>Amarte duele</option>
+        <option>La venganza del Charro Negro</option>
+        <option>Spider-Man</option>
+        <option>Halloween: El final</option>
+        <option>Masacre en Texas</option>
+      </select>
+    </label>
+    <label>Horario:
+      <select id="horario">
+        <option>4:00 pm</option>
+        <option>7:00 pm</option>
+        <option>9:00 pm</option>
+      </select>
+    </label>
+    <label>Boletos:
+      <input type="number" id="cantidad" value="1" min="1" max="10">
+    </label>
+    <h3>Escoge tu asiento</h3>
+    <div class="pantalla">PANTALLA</div>
+    <div id="asientos"></div>
+    <p class="leyenda">Gris: libre · Guinda: tu selección · Negro: ocupado</p>
+    <p>Asientos: <span id="lista">ninguno</span></p>
+    <p>Total: $<span id="total">0</span></p>
+    <button onclick="comprar()">Comprar</button>
+    <p id="confirmacion"></p>
+    <a class="volver" href="cine1.html">Volver a la cartelera</a>
+  </section>
+  <footer>
+    <img src="imageeee.png" alt="Logo final">
+    <p>Cineteca · El Cbtis 131</p>
+  </footer>
+  <script src="boletos1.js"></script>
+</body>
+</html>
